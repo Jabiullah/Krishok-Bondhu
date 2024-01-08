@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                />
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:text="Product Name" />
+
+            <TextView
+                android:id="@+id/product_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/product_name"
+                android:layout_toRightOf="@id/image"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="2dp"
+                android:text="Product Unit"
+                />
+
+
+            <TextView
+                android:id="@+id/product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn1"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/image"
+
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Now buy with 50 taka"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/green"
+                />
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/product_description"
+                android:text="Now buy with 50 taka"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:backgroundTint="#355e3b"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

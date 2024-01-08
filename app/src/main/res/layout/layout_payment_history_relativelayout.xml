@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10sp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/h_transaction_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="transaction id" />
+            <TextView
+                android:id="@+id/h_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="5dp"
+                android:text="Notification"
+                android:layout_below="@id/h_transaction_id"/>
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/green"
+                android:layout_below="@id/PayValue"
+                android:text="Date" />
+            <TextView
+                android:id="@+id/PayValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:text="18 taka(Baksh)" />
+            <TextView
+                android:id="@+id/PayProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/green"
+                android:layout_below="@+id/date"
+                android:text="" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:id="@+id/drawLineHead"
+                android:layout_marginTop="5sp"
+                android:layout_below="@id/PayProcess"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="#4A4848" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

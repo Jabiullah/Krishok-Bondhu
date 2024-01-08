@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">ক ব</string>
+
+    <string name="SplashScreenHead">কৃষক বন্ধু</string>
+
+    <string name="OnBoardScreen1">সহজ প্রবেশাধিকার</string>
+    <string name="OnBoardScreen2">নিরাপদ বৃদ্ধি</string>
+    <string name="OnBoardScreen3">টেকসই সমাধান</string>
+
+    <string name="OnBoardScreenBtn">পরবর্তী</string>
+
+    <string name="OnBoardScreen1Desc">প্রত্যেক কৃষকই আমাদের কাছে গুরুত্বপূর্ণ</string>
+    <string name="OnBoardScreen2Desc">উচ্চ ঋণের দিন শেষ হয়েছে</string>
+    <string name="OnBoardScreen3Desc">চতুর্থ কৃষি শিল্প বিপ্লব কৃষকের \n দোরগোড়ায়</string>
+
+    <string name="textHeadingOTP">মোবাইল নাম্বার দিয়ে এগিয়ে যান </string>
+
+    <string name="textHeadingAuth">মোবাইল নাম্বার কনফার্ম করুন</string>
+    <string name="textLowAuth"> নাম্বারে পাঠানো 6 সংখ্যার কোডটি লিখুন </string>
+    <string name="actionForOtherSim"><u>অন্য একটি মোবাইল সিমে মেসেজ এসেছে ?</u></string>
+    <string name="btnOfAuth">এগিয়ে যান </string>
+
+    <string name="btnRegInfo">NID এর  ছবি তুলুন</string>
+
+    <string name="payment1">পরিমাণ (কেজি)</string>
+    <string name="payment2">টাকা দেয়ার পদ্ধতি বাছাই করুন</string>
+    <string name="payment3">বিলের রশিদ</string>
+    <string name="payment4">কিনুন</string>
+</resources>

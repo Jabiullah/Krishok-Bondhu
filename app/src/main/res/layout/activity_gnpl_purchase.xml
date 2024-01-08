@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gnpl_purchase">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1sp"
+        android:background="@drawable/shapebar">
+        <RelativeLayout
+            android:layout_width="112dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5sp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/header_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="কৃষক"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/header_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="4dp"
+                android:text="বন্ধু"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head">
+        <TextView
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="15sp"
+            android:text="আবেদন রশিদ"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:text="Product Name"></TextView>
+        <TextView
+            android:id="@+id/product_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Time"
+            android:layout_below="@+id/first"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20sp"
+            android:textColor="@color/green"
+            android:layout_marginRight="20sp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/product_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Money"
+            android:layout_below="@+id/product_time"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:layout_marginRight="20sp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment1"
+            android:layout_below="@+id/product_value"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            >
+        </TextView>
+        <EditText
+            android:id="@+id/amountProd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginBottom="10sp"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:background="@drawable/box"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_below="@+id/product_value"
+            android:layout_toRightOf="@+id/product_quantity"
+            />
+        <Spinner
+            android:id="@+id/fieldSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20sp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/amountProd"
+            />
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_submit"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:text="সাবমিট করুন"
+        android:backgroundTint="@color/green"
+        android:layout_below="@+id/content" />
+</RelativeLayout>

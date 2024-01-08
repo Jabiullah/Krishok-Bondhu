@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        android:background="@drawable/shapebar">
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5sp">
+            <TextView
+                android:id="@+id/header_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="প্রোফাইল"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/profilePic"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/head"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:id="@+id/userName"
+        android:layout_below="@+id/head"
+        android:layout_toRightOf="@+id/profilePic"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="User Name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20sp"
+        android:id="@+id/userPhone"
+        android:layout_below="@+id/userName"
+        android:layout_toRightOf="@+id/profilePic"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="16sp"
+        android:text="User Phone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:id="@+id/drawLineHead"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/userPhone"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#4A4848" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PersonalInfoHeading"
+        android:layout_below="@id/drawLineHead"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="ব্যক্তিগত তথ্য"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="জন্মস্থান:"
+        android:id="@+id/userPlaceOfBirth"
+        android:layout_below="@+id/PersonalInfoHeading"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="জন্মস্থান"
+        android:id="@+id/PlaceOfBirthData"
+        android:layout_below="@+id/PersonalInfoHeading"
+        android:layout_toRightOf="@+id/userNID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="এনআইডি নম্বর"
+        android:id="@+id/userNID"
+        android:layout_below="@+id/userPlaceOfBirth"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="এনআইডি নম্বর"
+        android:id="@+id/NID_Data"
+        android:layout_below="@+id/PlaceOfBirthData"
+        android:layout_toRightOf="@+id/userNID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ঠিকানা:"
+        android:id="@+id/userLocation"
+        android:layout_below="@+id/userNID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/LocationData"
+        android:layout_below="@+id/NID_Data"
+        android:layout_toRightOf="@+id/userNID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:id="@+id/drawLineMiddle"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/LocationData"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#4A4848" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="প্রয়োজনীয় তথ্য"
+        android:textStyle="bold"
+        android:id="@+id/InfoHeading"
+        android:layout_below="@id/drawLineMiddle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherOdhidoptor"
+        android:text="আবহাওয়া অধিদপ্তরের ফোন নং : +880248112456"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/InfoHeading"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/matiOdhidoptor"
+        android:text="মৃত্তিকা বিভাগের ফোন নং : +880255100035"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/weatherOdhidoptor"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/krishiOdhidoptor"
+        android:text="কৃষি বিভাগের ফোন নং : 16123"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/matiOdhidoptor"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:id="@+id/drawLineLast"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/krishiOdhidoptor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#4A4848" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/sessionOut"
+        android:src="@drawable/logout"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/drawLineLast"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sessionOutText"
+        android:layout_below="@+id/drawLineLast"
+        android:layout_toRightOf="@+id/sessionOut"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="16sp"
+        android:text="লগ আউট করুন"
+        android:textColor="#C50A0A"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="labeled"
+        app:itemTextColor="@color/black"
+        app:menu="@menu/item_menu"
+        />
+
+</RelativeLayout>

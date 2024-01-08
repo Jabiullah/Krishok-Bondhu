@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ValidityCheckNID">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/HeadingOfValidity"
+        android:text="অনুগ্রহ করে এর সাথে মিলিয়ে সকল তথ্য নিশ্চিত করুন "
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NidValidity"
+        android:text="NID No:"
+        android:layout_below="@+id/HeadingOfValidity"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NidValue"
+        android:text="2245187"
+        android:layout_toRightOf="@+id/NidValidity"
+        android:layout_below="@+id/HeadingOfValidity"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NameValidity"
+        android:text="নাম : "
+        android:layout_below="@+id/NidValidity"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/NameValue"
+        android:text=" Rabius Sani Jabiullah "
+        android:layout_toRightOf="@+id/NameValidity"
+        android:layout_below="@+id/NidValidity"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BirthPlaceValidity"
+        android:text="জন্মস্থান : "
+        android:layout_below="@+id/NameValidity"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BirthPlaceValue"
+        android:text=" জন্মস্থান "
+        android:layout_toRightOf="@+id/BirthPlaceValidity"
+        android:layout_below="@+id/NameValidity"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PostCodeValidity"
+        android:text="পোস্ট কোড : "
+        android:layout_below="@+id/BirthPlaceValidity"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/PostCodeValue"
+        android:text=" পোস্ট কোড "
+        android:layout_toRightOf="@+id/PostCodeValidity"
+        android:layout_below="@+id/BirthPlaceValue"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddressValidity"
+        android:text="ঠিকানা : "
+        android:layout_below="@+id/PostCodeValidity"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddressValue"
+        android:text=" ঠিকানা "
+        android:layout_toRightOf="@+id/AddressValidity"
+        android:layout_below="@+id/PostCodeValue"
+        android:textSize="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button
+        android:id="@+id/DoneNid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="তথ্য যাচাইকরণ সম্পন্ন করা হয়েছে"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        />
+
+</RelativeLayout>

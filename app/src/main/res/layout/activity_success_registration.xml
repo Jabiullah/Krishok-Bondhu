@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuccessRegistration">
+    <ImageView
+        android:id="@+id/SuccessLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pi"
+        android:layout_below="@id/SuccessLogo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="ব্যক্তিগত তথ্য"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:text="কৃষক বন্ধু তে আপনাকে স্বাগতম"
+        android:layout_toRightOf="@+id/SuccessLogo"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:id="@+id/drawLineHead"
+        android:layout_marginTop="20sp"
+        android:layout_below="@id/pi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#4A4848" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Name"
+        android:layout_below="@+id/drawLineHead"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_phone"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Phone Number "
+        android:layout_below="@+id/userName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_nid"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Nid "
+        android:layout_below="@+id/user_phone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_birthplace"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Birth Place "
+        android:layout_below="@+id/user_nid"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_postCode"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Birth Place "
+        android:layout_below="@+id/user_birthplace"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_address"
+        android:textSize="18dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Phone Address "
+        android:layout_below="@+id/user_postCode"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDone"
+        android:layout_below="@+id/user_address"
+        android:textSize="18sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="তথ্য সঠিক আছে "
+        android:backgroundTint="@color/green"
+        android:textColor="@color/white"
+        />
+</RelativeLayout>

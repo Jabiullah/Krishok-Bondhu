@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_display_info">
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1sp"
+        android:background="@drawable/shapebar">
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/header_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="পণ্যের বর্ণনা"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/head"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/productImage"
+        />
+    <TextView
+        android:id="@+id/ProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productImage"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Product Name"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProductPrice"
+        android:text="Product Price"
+        android:textSize="16sp"
+        android:layout_below="@+id/ProductName"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProductDescription"
+        android:text="Product Description"
+        android:textSize="16sp"
+        android:layout_below="@+id/ProductPrice"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGNPL"
+        android:layout_below="@+id/ProductDescription"
+        android:text="Now buy with 50 taka"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOneTime"
+        android:layout_below="@+id/btnGNPL"
+        android:text="Now buy with 50 taka"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/green"
+        />
+</RelativeLayout>

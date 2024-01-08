@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/filed_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="জমির দাগ নং " />
+
+            <TextView
+                android:id="@+id/field_serial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/filed_no"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/soil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/filed_no"
+                android:text="মাটি প্রকৃতি :"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/details_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/soil"
+                android:text="বিস্তারিত তথ্য :"
+                />
+
+            <TextView
+                android:id="@+id/deedOwner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/details_info"
+                android:text="সম্পত্তি আপনার নামে আছে"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/deedStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/deedOwner"
+                android:text="দলিল এখনও যাচাইয়ের জন্য অপেক্ষা করছে"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/removeDeed"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/remove" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
